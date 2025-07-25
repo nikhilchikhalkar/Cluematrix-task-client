@@ -75,7 +75,7 @@ export default function ClassDetails() {
             {workout ? (
               <a
                 // href={`http://localhost:5000/uploads/${workout.fileUrl}`}
-                href={`process.env.REACT_APP_API_BASE_FILE_URL/uploads/${workout.fileUrl}`}
+                href={`${process.env.REACT_APP_API_BASE_FILE_URL}uploads/${workout.fileUrl}`}
                 target="_blank"
                 rel="noreferrer"
                 className={`${baseBtn} ${greenGradient} text-sm`}

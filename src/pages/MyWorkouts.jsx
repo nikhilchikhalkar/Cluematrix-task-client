@@ -41,7 +41,8 @@ export default function MyWorkouts() {
             <li key={p._id} className="space-y-1">
               <p><strong>Class:</strong> {p.class?.title || 'N/A'}</p>
               <a
-                href={`http://localhost:5000/uploads/${p.fileUrl}`}
+                // href={`http://localhost:5000/uploads/${p.fileUrl}`}
+                href={`${process.env.REACT_APP_API_BASE_FILE_URL}uploads/${p.fileUrl}`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-blue-600 underline"
