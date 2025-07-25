@@ -29,7 +29,7 @@ export default function Login() {
     }
   };
 
-
+console.log("url", process.env.REACT_APP_API_BASE_URL)
   
   const baseBtn =
     "px-4 py-2 text-white font-semibold rounded shadow transition duration-300";

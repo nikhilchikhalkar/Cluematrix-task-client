@@ -74,7 +74,8 @@ export default function ClassDetails() {
             <h3 className="text-lg font-semibold text-gray-800 mb-2">Workout Plan</h3>
             {workout ? (
               <a
-                href={`http://localhost:5000/uploads/${workout.fileUrl}`}
+                // href={`http://localhost:5000/uploads/${workout.fileUrl}`}
+                href={`process.env.REACT_APP_API_BASE_FILE_URL/uploads/${workout.fileUrl}`}
                 target="_blank"
                 rel="noreferrer"
                 className={`${baseBtn} ${greenGradient} text-sm`}
